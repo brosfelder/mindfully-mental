@@ -1,0 +1,138 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: white;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero section */
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, #fff, #e0e7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Construction notice */
+.construction-notice {
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.construction-notice h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffd700;
+}
+
+.construction-notice p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+/* Coming soon section */
+.coming-soon {
+    margin-top: 2rem;
+}
+
+.coming-soon h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #e0e7ff;
+}
+
+.coming-soon ul {
+    list-style: none;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.coming-soon li {
+    background: rgba(255,255,255,0.05);
+    margin: 0.5rem 0;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.coming-soon li:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateX(5px);
+}
+
+/* Footer */
+footer {
+    background: rgba(0,0,0,0.3);
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .construction-notice h3 {
+        font-size: 1.5rem;
+    }
+    
+    .construction-notice p {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .construction-notice {
+        padding: 1.5rem;
+    }
+}
